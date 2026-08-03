@@ -83,3 +83,34 @@ export const recentIssues = [
     assignee: "Omar",
   },
 ];
+
+export const issues = [
+  {
+    id: 1,
+    title: "Login authentication bug",
+    status: "Open",
+    priority: "High",
+    assignee: "Shahd",
+  },
+  {
+    id: 2,
+    title: "Dashboard UI improvements",
+    status: "In_Progress",
+    priority: "Medium",
+    assignee: "Ahmad",
+  },
+  {
+    id: 3,
+    title: "Fix API response",
+    status: "Closed",
+    priority: "Low",
+    assignee: "Sara",
+  },
+  {
+    id: 4,
+    title: "Responsive sidebar",
+    status: "Open",
+    priority: "High",
+    assignee: "Omar",
+  },
+];

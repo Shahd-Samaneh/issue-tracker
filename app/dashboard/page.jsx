@@ -1,9 +1,8 @@
-import { dashboardStats } from "@/lib/data";
+import { dashboardStats, recentIssues } from "@/lib/data";
 import StatsCard from "@/components/dashboard/StatsCard";
 import StatusChart from "@/components/dashboard/StatusChart";
 import WeeklyChart from "@/components/dashboard/WeeklyChart";
-import RecentIssues from "@/components/dashboard/RecentIssues";
-
+import IssueTable from "@/components/common/IssueTable";
 async function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -27,8 +26,9 @@ export default async function DashboardPage() {
         <StatusChart />
         <WeeklyChart />
       </div>
-
-      <RecentIssues />
+      <div className="mt-8">
+        <IssueTable title="Recent Issues" subtitle="Latest project activity" issues={recentIssues} />
+      </div>
     </>
   );
 }
