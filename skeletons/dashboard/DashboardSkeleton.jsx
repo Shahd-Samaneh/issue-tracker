@@ -1,4 +1,4 @@
-import RecentIssuesSkeleton from "./RecentIssuesSkeleton";
+import IssueTableSkeleton from "../common/IssueTableSkeleton";
 import StatsCardSkeleton from "./StatsCardSkeleton";
 import StatusChartSkeleton from "./StatusChartSkeleton";
 import WeeklyChartSkeleton from "./WeeklyChartSkeleton";
@@ -25,7 +25,7 @@ export default function DashboardSkeleton() {
       </div>
 
       <div className="mt-8">
-        <RecentIssuesSkeleton />
+        <IssueTableSkeleton />
       </div>
 
     </>

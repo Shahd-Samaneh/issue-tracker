@@ -1,4 +1,4 @@
-export default function RecentIssuesSkeleton() {
+export default function IssueTableSkeleton() {
     return (
         <div className="animate-pulse rounded-xl border border-gray-200 bg-white shadow-sm">
             <div className="border-b border-gray-200 px-6 py-4">
