@@ -3,18 +3,18 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
 model Issue {
-  id          Int      @id @default(autoincrement())
-  title       String
-  description String
-  status      String
-  priority    String
-  assignee    String
-  isArchived Boolean @default(false)
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id           Int      @id @default(autoincrement())
+  title        String
+  description  String
+  status       String
+  priority     String
+  assignee     String
+  isArchived   Boolean  @default(false)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
 }
