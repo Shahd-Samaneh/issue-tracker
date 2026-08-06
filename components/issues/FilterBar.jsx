@@ -26,7 +26,7 @@ export default function FilterBar() {
         className="rounded-lg border border-gray-200 bg-white px-4 py-2.5 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
         <option>All</option>
         <option>Open</option>
-        <option>In Progress</option>
+        <option>In_Progress</option>
         <option>Closed</option>
       </select>
 
